@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gudea&family=Kanit&family=Roboto&family=Satisfy&family=Ubuntu&display=swap" rel="stylesheet">
+   <style>
+        body{
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font-family: 'Kanit', sans-serif;
+        }
+        .firstcontainer{
+            position: relative;
+            background-color: rgb(234, 239, 237);
+            width: 70%;
+            display: block;
+            margin: 150px auto;
+            text-align: center;
+            padding-bottom: 4cm;
+            border-radius: 20px;
+            padding-top: 2cm;
+            border: 1px solid rgb(190, 190, 190);
+            transition: 1s;
+            transform: scale(0);
+            
+        }
+        .firstcontainer:hover{
+            box-shadow: 5px 5px 10px;
+        }
+        .button{
+            width: 100%;
+            
+        }
+        #button{
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font-size: 25px;
+            margin-top: 3cm;
+            width: 20%;
+            height: 2cm;
+            border-radius: 30px;
+            background-color: rgb(150, 205, 229);
+            transition: .3s;
+            color: rgb(0, 0, 0);
+            /* text-transform: uppercase; */
+            font-weight: bold;
+
+        }
+        #button:hover{
+            background-color: rgb(114, 164, 187);
+            box-shadow: 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="firstcontainer" id="firstcontainer">
+        <h1>Your Contact book</h1>
+        <div class="button">
+            <input id="button" type="button" value="Add Contact" onclick="save()">
+        </div>
+        
+        <div class="button">
+            <input id="button" type="button" value="Show Contact" onclick="show()">
+        </div>
+        <script>
+            window.onload = function(){
+                document.getElementById("firstcontainer").style.transform = "scale(1)"
+            }
+            function save(){
+                window.location.href = "savecontact.html";
+            }
+            function show(){
+                window.location.href = "contactdetails.html"
+            }
+            
+        </script>
+        
+
+
+    </div>
+</body>
+</html>

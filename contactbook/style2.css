@@ -1,0 +1,87 @@
+*{
+    box-sizing: 0;
+}
+body{
+    box-sizing: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+.container{
+    height: 50%;
+    width: 45%;
+    background-color: rgb(234, 239, 237);
+    display: block;
+    /* margin: 3%; */
+    margin-top: 2cm;
+    margin-left: 3%;
+    border-radius: 20px;
+    text-align: center;
+}
+.div:hover{
+    box-shadow: 10px 10px 10px;
+}
+.pop{
+    padding-left: 2%;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    background-color: rgb(114, 164, 187);
+    width: 45%;
+    margin-left: 50%;
+    margin-top: 2cm;
+    overflow: scroll;
+    overflow-x: hidden;
+    top: 0px;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+.pop::-webkit-scrollbar {
+    display: none;
+}
+.space{
+    position: absolute;
+    margin-left: 50%;
+    /* float: left; */
+    left: 0px;
+}
+/* @media screen and (max-width: 1005px) {
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: aqua;
+    }
+    .icons{
+        position:relative;
+        top: .5cm;
+        margin-left: 70%;
+    }
+} */
+.icons{
+    position:absolute;
+    top:.8cm;
+    margin-left: 85%;
+}
+#trash{
+    color: rgb(0, 0, 0);
+    transition: .2s;
+    margin-left: .5cm;
+}
+#edit{
+    color: rgb(0, 0, 0);
+    transition: .2s;
+}
+#edit:hover {
+    color: rgb(77, 255, 0);
+    transform: scale(1.3);
+}
+#trash:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.3);
+}
+hr{
+    background-color: black;
+    height: 3px;
+    width: 90%;
+    border: none;
+}

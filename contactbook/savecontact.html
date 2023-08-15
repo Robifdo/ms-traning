@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&family=Kanit&family=Roboto&family=Satisfy&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Save contact</title>
+</head>
+<body>
+    <form action="" id="form">
+        <div class="heading">
+            <h2 class="h2">Add contact</h2>
+        </div>
+        <div class="container" >
+            <div class="profile">
+                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" class="image" alt="">
+
+            </div>
+            
+                <div class="label">
+                    <label class="lables" for="">Name<span>*</span></label>
+                    <div class="popup">
+                        <div class="names">
+                            <label for="fname" class="lables">First name<span>*</span></label>  
+                            <input type="text" class="inputname input" required id="fname">                      
+                        </div>
+                        <div class="names">
+                            <label for="lname" class="lables">Last name</label>
+                            <input type="text" class="inputname input" id="lname">
+                        </div>
+                        <div class="names">
+                            <label for="nname" class="lables">Nick name</label>
+                            <input type="text" class="inputname input" id="nname">
+                        </div> 
+                    </div>               
+                </div>
+           
+                
+            <div class="label">
+                <label for="mobnumber" class="lables">Mobile number<span>*</span></label>
+                <input type="number" class="input" required id="mobnumber">  
+            </div>
+            <div class="label">
+                <label for="" class="lables">DoB</label>
+                <input type="date" class="input" placeholder="" id="dob">
+            </div>
+            <div class="label">
+                <label for=""class="lables">Email<span>*</span></label>
+                <input type="text" class="input" required id="email">
+            </div>
+            <div class="label">
+                <label for=""class="lables">Address<span>*</span></label>
+                <div class="popup">
+                    <div class="street">
+                        <label for="street" class="lables">Street</label>
+                        <input type="text" class="inputname input" id="street">
+                    </div>
+                    <div class="place">
+                        <label for="place" class="lables">Place<span>*</span></label>
+                        <input type="text" class="inputname input" required id="place">
+                    </div>
+                    <div class="state">
+                        <label for="email" class="lables">State<span>*</span></label>
+                        <input type="text" class="inputname input" required id="state">
+                    </div>
+                    <div class="country">
+                        <label for="email" class="lables">Country</label>     
+                        <input type="text" class="inputname input" id="country">                  
+                    </div>
+                    <div class="pincode">
+                        <label for="email" class="lables">Pincode<span>*</span></label> 
+                        <input type="text" class="inputname input" required id="pincode">                       
+                    </div>
+                </div>
+            </div>
+            <div class="label">                
+                <label for=""class="lables">Work</label>
+                <input type="text" class="input" id="work">
+            </div>
+            <div class="label">               
+                <label for=""class="lables">Relationship</label>
+                <input type="text" class="input" id="relation">
+            </div>
+            <div class="label">
+               
+                <label for=""class="lables">notes</label>
+                <input type="text" class="input" id="notes">
+            </div>
+            <div class="save">
+                <button type="submit" class="button" onclick="getdata()">save</button>
+            </div>
+
+        </div>
+    </form>
+    
+</body>
+</html>
