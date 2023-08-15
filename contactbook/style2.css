@@ -85,3 +85,17 @@ hr{
     width: 90%;
     border: none;
 }
+.savecon{
+    width: 24%;
+    /* margin-bottom: 1cm; */
+    margin: 1cm 38%;
+    border-radius: 5px;
+    background-color: rgb(68, 108, 110);
+    transition: .3s;
+    font-family: 'Kanit', sans-serif;
+    /* margin-left: 3cm; */
+}
+.savecon:hover{
+    box-shadow: 3px 3px 10px;
+    transform: scale(1.1);
+}

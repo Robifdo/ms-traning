@@ -99,3 +99,6 @@ function details(){
         })
     }
 }
+function savecontact(){
+        window.location.href = "savecontact.html"
+}
