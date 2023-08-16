@@ -56,10 +56,6 @@ function getdata(){
     else{
         alert("Enter the mandatory details !!!")
     }
-    // duplicate_data = data
-    // if(valid===true){
-    //     window.location.href = "C:\Users\Administrator.MS-00601\Desktop\robi-git\ms-traning\contactbook\contactdetails.html";
-    // }
 }
 // console.log(duplicate_data)
 function details(){

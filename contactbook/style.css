@@ -93,7 +93,6 @@ body{
 
 .label:hover .popup{
     color: black;
-    /* padding: 10px; */
     font-size: 20px;
     height: auto;
     background-color: azure;
