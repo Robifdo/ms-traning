@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&family=Kanit&family=Roboto&family=Satisfy&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9ec402f705.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>edit contact</title>
+</head>
+<body>
+    <form action="" id="form">
+        <div class="heading">
+            <h2 class="h2">Edit contact</h2>
+        </div>
+        <div class="container" >
+            <div class="profile">
+                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" class="image" alt="">
+                <a href="contactdetails.html"><i id="icon" class="fa-solid fa-address-book fa-2xl" onclick="went()"></i></a>
+            </div>
+                <div class="label">
+                    <label class="lables" for="">Name<span>*</span></label>
+                    <div class="popup">
+                        <div class="names">
+                            <label for="fname" class="lables">First name<span>*</span></label>  
+                            <input type="text" class="inputname input" required id="fname">                      
+                        </div>
+                        <div class="names">
+                            <label for="lname" class="lables">Last name</label>
+                            <input type="text" class="inputname input" id="lname">
+                        </div>
+                        <div class="names">
+                            <label for="nname" class="lables">Nick name</label>
+                            <input type="text" class="inputname input" id="nname">
+                        </div> 
+                    </div>               
+                </div>
+            <div class="label">
+                <label for="mobnumber" class="lables">Mobile number<span>*</span></label>
+                <input type="number" class="input" required id="mobnumber">  
+            </div>
+            <div class="label">
+                <label for="" class="lables">DoB</label>
+                <input type="date" class="input" placeholder="" id="dob">
+            </div>
+            <div class="label">
+                <label for=""class="lables">Email<span>*</span></label>
+                <input type="text" class="input" required id="email" value="">
+            </div>
+            <div class="label">
+                <label for=""class="lables">Address<span>*</span></label>
+                <div class="popup">
+                    <div class="street">
+                        <label for="street" class="lables">Street</label>
+                        <input type="text" class="inputname input" id="street">
+                    </div>
+                    <div class="place">
+                        <label for="place" class="lables">Place<span>*</span></label>
+                        <input type="text" class="inputname input" required id="place">
+                    </div>
+                    <div class="state">
+                        <label for="email" class="lables">State<span>*</span></label>
+                        <input type="text" class="inputname input" required id="state">
+                    </div>
+                    <div class="country">
+                        <label for="email" class="lables">Country</label>     
+                        <input type="text" class="inputname input" id="country">                  
+                    </div>
+                    <div class="pincode">
+                        <label for="email" class="lables">Pincode<span>*</span></label> 
+                        <input type="text" class="inputname input" required id="pincode">                       
+                    </div>
+                </div>
+            </div>
+            <div class="label">                
+                <label for=""class="lables">Work</label>
+                <input type="text" class="input" id="work">
+            </div>
+            <div class="label">               
+                <label for=""class="lables">Relationship</label>
+                <input type="text" class="input" id="relation">
+            </div>
+            <div class="label">
+               
+                <label for=""class="lables">notes</label>
+                <input type="text" class="input" id="notes">
+            </div>
+            <div class="save">
+                <button type="submit" class="button" onclick="setdata()">save</button>
+            </div>
+
+        </div>
+    </form>
+    <script>
+        let editcon = JSON.parse(localStorage.getItem("contactbook"))
+        let r = localStorage.getItem("row")
+        let val = editcon[r]
+        document.getElementById("fname").value = val["fname"]
+        document.getElementById("lname").value = val["lname"]
+        document.getElementById("nname").value = val["nname"]
+        document.getElementById("mobnumber").value = val["mobnumber"]
+        document.getElementById("dob").value = val["dob"]
+        document.getElementById("email").value = val["email"]
+        document.getElementById("street").value = val["street"]
+        document.getElementById("place").value = val["place"]
+        document.getElementById("state").value = val["state"]
+        document.getElementById("country").value = val["country"]
+        document.getElementById("pincode").value = val["pincode"]
+        document.getElementById("work").value = val["work"]
+        document.getElementById("relation").value = val["relation"]
+        document.getElementById("notes").value = val["notes"]
+        function setdata(){
+            getdetails = {
+                fname : document.getElementById("fname").value,
+                lname : document.getElementById("lname").value,
+                nname : document.getElementById("nname").value,
+                mobnumber : document.getElementById("mobnumber").value,
+                dob : document.getElementById("dob").value,
+                email : document.getElementById("email").value,
+                street : document.getElementById("street").value,
+                place : document.getElementById("place").value,
+                state : document.getElementById("state").value,
+                country : document.getElementById("country").value,
+                pincode : document.getElementById("pincode").value,
+                work : document.getElementById("work").value,
+                relation : document.getElementById("relation").value,
+                notes : document.getElementById("notes").value,
+            }
+            editcon[r] = getdetails
+            localStorage.setItem("contactbook",JSON.stringify(editcon))
+        }
+        console.log(editcon)
+    </script>
+</body>
+</html>

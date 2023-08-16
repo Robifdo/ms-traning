@@ -1,16 +1,25 @@
-data = [];
+var data = 0;
+var duplicate_data;
+var arr = [1,2,3,4,5,6]
+var row = "select the contact to make changes";
+if(!localStorage.getItem("contactbook")){
+    data = []
+}
+else{
+    data = JSON.parse(localStorage.getItem("contactbook"))
+}
 window.onload = function(){
-    data.push(localStorage.getItem("contactdetails"));
+    // data.push(localStorage.getItem("contactbook"));
     document.getElementById("form").style.transform = "scale(1)";
 }
+function went(){
+    window.location.href = "C:\Users\Administrator.MS-00601\Desktop\robi-git\ms-traning\contactbook\contactdetails.html"
+}
 function getdata(){
-    if(!localStorage.getItem("contactbook")){
-        data = []
-    }
-    else{
-        data = JSON.parse(localStorage.getItem("contactbook"))
-    }
-    getdetails = {
+
+
+    
+    let getdetails = {
     fname : document.getElementById("fname").value,
     lname : document.getElementById("lname").value,
     nname : document.getElementById("nname").value,
@@ -43,14 +52,22 @@ function getdata(){
     if(valid===true){
             data.push(getdetails)
             localStorage.setItem("contactbook",JSON.stringify(data))
-            alert("contact saved")
-            window.location.href = "contactdetails.html"
-    }
+            alert("contact saved") 
+            duplicate_data = data;
+            // alert(JSON.stringify(duplicate_data))
+        }
     else{
         alert("Enter the mandatory details !!!")
     }
+    // duplicate_data = data
+    // if(valid===true){
+    //     window.location.href = "C:\Users\Administrator.MS-00601\Desktop\robi-git\ms-traning\contactbook\contactdetails.html";
+    // }
 }
+// console.log(duplicate_data)
 function details(){
+// document.getElementById("total").style.transform = "scale(1)"
+
     let tabcon = document.createElement("div")
     document.body.appendChild(tabcon)
     tabcon.style.width = "45%"
@@ -82,6 +99,8 @@ function details(){
         tr.appendChild(name)
         tr.addEventListener("click",function(){
             let rowi = tr.rowIndex;
+            row = rowi
+            localStorage.setItem("row",row)
             let p = document.getElementById("pop")
             document.getElementById("fn").innerHTML = ": "+detailsofcontact[rowi]["fname"]
             document.getElementById("ln").innerHTML = ": "+detailsofcontact[rowi]["lname"]
@@ -98,7 +117,37 @@ function details(){
             document.getElementById("not").innerHTML = ": "+detailsofcontact[rowi]["notes"]
         })
     }
+    
 }
+function deletecontact(){
+    let delcon = JSON.parse(localStorage.getItem("contactbook"))
+    let empty = []
+    console.log("row is "+row)
+    if(confirm("Are you want to delete contact?")){
+        for(let j=0;j<delcon.length;j++){
+            if(j===row){
+                continue;
+            }
+            else{
+                empty.push(delcon[j])
+            }
+        }
+        localStorage.setItem("contactbook",JSON.stringify(empty))
+        document.location.reload();
+    }
+}
+function editcontact(){
+    if(row==="select the contact to make changes"){
+        alert("select the contact to edit")
+    }
+    else{
+        window.location.href = "editcontact.html"
+        localStorage.setItem("row",row)
+    }
+
+    
+}
+
 function savecontact(){
         window.location.href = "savecontact.html"
 }
