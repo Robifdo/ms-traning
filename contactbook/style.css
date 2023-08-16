@@ -9,12 +9,13 @@ input[type=date]:required:invalid::-webkit-datetime-edit {
 input[type=date]:focus::-webkit-datetime-edit {
     color: black !important;
 }
-@media screen and (max-width:1600px) {
+@media screen and (max-width:1550px) {
     body{
         color: blue;
     }
     .container{
-        font-size: 20px;
+        font-size: 15px;
+        background-color: bisque;
     }
 }
 
@@ -24,7 +25,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 }
 body{
     font-family: 'Kanit', sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
 } 
 .heading{
     margin-top: 1cm;
@@ -56,6 +57,7 @@ body{
     border-radius: 40%;
 
 }
+
 #icon{
     position: absolute;
     top: 1cm;
@@ -88,11 +90,7 @@ body{
     /* opacity: 0; */
     transform: scale(0);
 }
-@media screen and(min-width:1560px) {
-    body{
-        background-color: aquamarine;
-    }
-}
+
 .label:hover .popup{
     color: black;
     /* padding: 10px; */

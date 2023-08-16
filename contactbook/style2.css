@@ -11,13 +11,16 @@ body{
 .container{
     height: 50%;
     width: 45%;
-    background-color: rgb(234, 239, 237);
+    background-color: rgb(228, 231, 231);
     display: block;
     /* margin: 3%; */
     margin-top: 2cm;
     margin-left: 3%;
     border-radius: 20px;
     text-align: center;
+}
+#whatsapp{
+    width: 2cm;
 }
 .div:hover{
     box-shadow: 10px 10px 10px;
@@ -34,11 +37,26 @@ body{
     overflow: scroll;
     overflow-x: hidden;
     top: 0px;
-    max-height: 90%;
+    max-height: 85%;
     border-radius: 20px;
+    transition: .3s;
+}
+.pop:hover{
+    transform: scale(1.01);
+}
+.detail{
+    animation-name: detail;
+}
+@keyframes detail {
+    0%{color: chartreuse;}
+    50%{color: deeppink;font-size: 40px;}
+    100%{color:chartreuse}
 }
 
 .pop::-webkit-scrollbar {
+    display: none;
+}
+.body::-webkit-scrollbar {
     display: none;
 }
 .space{

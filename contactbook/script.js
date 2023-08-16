@@ -16,9 +16,6 @@ function went(){
     window.location.href = "C:\Users\Administrator.MS-00601\Desktop\robi-git\ms-traning\contactbook\contactdetails.html"
 }
 function getdata(){
-
-
-    
     let getdetails = {
     fname : document.getElementById("fname").value,
     lname : document.getElementById("lname").value,
@@ -72,31 +69,58 @@ function details(){
     document.body.appendChild(tabcon)
     tabcon.style.width = "45%"
     tabcon.style.margin = "0px 3%"
-    tabcon.style.maxHeight = "70vh";
+    tabcon.style.maxHeight = "63vh";
     tabcon.style.overflow = "scroll";
     tabcon.style.overflowX = "hidden";
+    // tabcon.style.border = "10px solid black"
+    // tabcon.style.borderRadius = "20px"
+    // tabcon.style.backgroundColor = "black"
     
     let detailsofcontact = JSON.parse(localStorage.getItem("contactbook"))
     let table = document.createElement("table")
     table.style.width = "100%";
+    table.style.backgroundColor = "black"
     table.style.top = "0px"
     table.style.borderRadius = "20px"
     table.style.position = "relative"
     table.style.maxHeight = "70vh"
+    table.style.padding = "2px";
+    // table.style.border = "5px solid black"
+    
     tabcon.appendChild(table)
+
+    
     for(let x of detailsofcontact){
         let tr = document.createElement("tr")
-        tr.style.backgroundColor = "rgb(114, 164, 187)"
+        tr.style.backgroundColor = "rgb(228, 231, 231)"
         tr.style.borderRadius = "20px"
         tr.style.fontSize = "30px";
-        tr.style.textAlign = "center";
         tr.style.color = "aliceblue";
         tr.style.height = "2cm"
+        tr.style.marginLeft = "2cm"
         tr.style.marginTop = "20px"
+        tr.style.padding = "20px"
+
+        
         table.appendChild(tr)
+        let td = document.createElement("td")
+        tr.appendChild(td)
         let name = document.createElement("p")
         name.innerHTML =x["fname"];
-        tr.appendChild(name)
+        td.appendChild(name)
+        td.style.border = "1px solid black"
+        td.style.backgroundColor = "rgb(114, 164, 187)"
+        td.style.borderRadius = "20px"
+        td.style.paddingLeft = "1.5cm"
+        td.style.transition = ".4s"
+        td.addEventListener("mouseover",function(){
+            td.style.fontSize = "40px";
+            // td.style.boxShadow = "10px 10px 10px green"
+        })
+        td.addEventListener("mouseout",function(){
+            td.style.fontSize = "30px";
+            // td.style.boxShadow = "0px 0px 0px"
+        })
         tr.addEventListener("click",function(){
             let rowi = tr.rowIndex;
             row = rowi
