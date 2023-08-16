@@ -46,10 +46,12 @@ body{
 }
 .detail{
     animation-name: detail;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
-@keyframes detail {
+@keyframes detail{
     0%{color: chartreuse;}
-    50%{color: deeppink;font-size: 40px;}
+    50%{color: deeppink;}
     100%{color:chartreuse}
 }
 
