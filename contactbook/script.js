@@ -65,10 +65,9 @@ function details(){
     document.body.appendChild(tabcon)
     tabcon.style.width = "45%"
     tabcon.style.margin = "0px 3%"
-    tabcon.style.maxHeight = "63vh";
+    tabcon.style.maxHeight = "67vh";
     tabcon.style.overflow = "scroll";
     tabcon.style.overflowX = "hidden";
-    // tabcon.style.border = "10px solid black"
     // tabcon.style.borderRadius = "20px"
     // tabcon.style.backgroundColor = "black"
     
@@ -92,7 +91,7 @@ function details(){
         tr.style.borderRadius = "20px"
         tr.style.fontSize = "30px";
         tr.style.color = "aliceblue";
-        tr.style.height = "2cm"
+        tr.style.height = "3%"
         tr.style.marginLeft = "2cm"
         tr.style.marginTop = "20px"
         tr.style.padding = "20px"
@@ -110,12 +109,10 @@ function details(){
         td.style.paddingLeft = "1.5cm"
         td.style.transition = ".4s"
         td.addEventListener("mouseover",function(){
-            td.style.fontSize = "40px";
-            // td.style.boxShadow = "10px 10px 10px green"
+        td.style.fontSize = "40px";
         })
         td.addEventListener("mouseout",function(){
             td.style.fontSize = "30px";
-            // td.style.boxShadow = "0px 0px 0px"
         })
         tr.addEventListener("click",function(){
             let rowi = tr.rowIndex;

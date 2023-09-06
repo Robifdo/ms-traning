@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hint" id="hint">
+            Try to guess the Number......from 1 to 100
+        </div>
+        <div class="display">
+            <input id="display" type="number" class="display" style="font-size: 50px;">
+        </div>
+        <div class="pad">
+            <input class="but" type="button" value="1" onclick="display(1)">
+            <input class="but" type="button" value="2" onclick="display(2)">
+            <input class="but" type="button" value="3" onclick="display(3)">
+            <input class="but" type="button" value="4" onclick="display(4)">
+            <input class="but" type="button" value="5" onclick="display(5)">
+            <input class="but" type="button" value="6" onclick="display(6)">
+            <input class="but" type="button" value="7" onclick="display(7)">
+            <input class="but" type="button" value="8" onclick="display(8)">
+            <input class="but" type="button" value="9" onclick="display(9)">
+            <input class="but zero" type="button" value="0" onclick="display(0)">
+        </div>
+        <div class="check">
+            <button type="submit" onclick="guess()">Check</button>
+        </div>
+    </div>
+</body>
+</html>

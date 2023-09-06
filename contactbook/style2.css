@@ -14,7 +14,7 @@ body{
     background-color: rgb(228, 231, 231);
     display: block;
     /* margin: 3%; */
-    margin-top: 2cm;
+    margin-top: 1.5cm;
     margin-left: 3%;
     border-radius: 20px;
     text-align: center;
@@ -33,11 +33,11 @@ body{
     background-color: rgb(114, 164, 187);
     width: 45%;
     margin-left: 50%;
-    margin-top: 2cm;
+    margin-top: 1.5cm;
     overflow: scroll;
     overflow-x: hidden;
     top: 0px;
-    max-height: 85%;
+    max-height: 90%;
     border-radius: 20px;
     transition: .3s;
 }
@@ -67,17 +67,8 @@ body{
     /* float: left; */
     left: 0px;
 }
-/* @media screen and (max-width: 1005px) {
-    body{
-        font-family: 'Courier New', Courier, monospace;
-        background-color: aqua;
-    }
-    .icons{
-        position:relative;
-        top: .5cm;
-        margin-left: 70%;
-    }
-} */
+
+
 .icons{
     position:absolute;
     top:.8cm;

@@ -1,0 +1,60 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    /* background-image: linear-gradient(to bottom,rgba(59, 156, 161, 0.413) ,rgba(227, 125, 196, 0.537)); */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.bg{
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    height: 120vh;
+    width: 100vw;
+    filter: blur(2px);
+}
+.box{
+    font-size: 0;
+    width: 9.6cm;
+    box-sizing: border-box;
+    height: 9.6cm;
+    border:1px solid black;
+    top: 5.5cm;
+    margin: 6.5cm auto;
+    background-color: rgb(71, 65, 65);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.button{
+    background-image: linear-gradient(to right,white,white);
+    border-radius: 5px;
+    margin-left: 0px;
+    width: 3cm;
+    height: 3cm;
+    transition: .3s;
+    border-color: rgb(255, 255, 255);
+    /* background-image: url("https://static.vecteezy.com/system/resources/thumbnails/017/178/409/small/red-cross-check-mark-on-transparent-background-free-png.png") ; */
+}
+img{
+    height: 2.5cm;
+    width: 2.5cm;
+}
+.display{
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 16cm;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kanit', sans-serif;
+    /* border: 2px solid black; */
+
+}
+.para{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(185, 181, 181);
+    padding: 40px;
+    border-radius: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="emailcheck.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <div class="total">
+        <div class="bg"><img  src="https://wsa.ch/en/wp-content/uploads/sites/4/2020/09/MS-SCHLIEREN.jpeg" alt=""></div>
+        <div class="container bor">
+            <div class="email">
+                <label for="" class="label">Enter your mail id</label>
+                <input type="text" id="email" class="text bor em">
+            </div>
+            <div class="button">
+                <label for=""  class="label">Enter your password</label>
+                <input type="text" id="password" class="text bor pw">
+            </div>
+            <div class="submit bor">
+                <button class="submit_button bor" type="submit" onclick="check(document.getElementById('email').value,document.getElementById('password').value)">submit</button>
+            </div>
+            <div class="para">
+                <p id="demo"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

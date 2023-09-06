@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+                background-color: rgb(253, 239, 235);
+            }
+            .card{
+                transform: skew(340deg);
+                font-size: 30px;
+                background-color: rgb(255, 119, 0);
+                display: inline-block;
+                padding: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                transition: font-size .3s;
+            }
+            .zoom:hover{
+                font-size: 35px;
+            }
+            .high{
+                position: relative;
+                margin-top: 10px;
+            }
+            .link{
+                text-decoration: none;
+                color: black;
+            }
+            .four{
+                height: 1.5cm;
+                font-size: larger;
+            }
+            .seven{
+                float: right;
+            }
+            .six{
+                float: right;
+            }
+            .five{
+                float: right;
+            }
+            .twelve{
+                float: right;
+            }
+            .eight{
+                position: absolute;
+                left: 6cm;
+                top: 8cm;
+            }
+            .nine{
+                position: absolute;
+                left: 6cm;
+                top: 15cm;
+            }
+            .ten{
+                position: absolute;
+                left: 35cm;
+                top: 8cm;
+            }
+            .eleven{
+                position: absolute;
+                left: 35cm;
+                top: 15cm;
+            }
+            .heading{
+                /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+                font-size: 60px;
+            }
+            .rc8{
+                position: absolute;
+                display: inline-block;
+                left: 20cm;
+                top: 3cm;
+            }
+            .bike{
+                /* margin: 0px auto; */
+                position: absolute;
+                width: 20cm;
+                left: 15cm;
+                top: 7cm;
+                transition: width .5s;
+                size:8vw;
+                /* box-shadow: 10px 5px 20px rgb(0, 0, 0); */
+            }
+            .specs{
+                opacity: 0;
+                transition: opacity.5s,font-size .3s;
+            }
+            .image:hover .specs{
+                opacity: 1;
+                font-size: 35px;
+            }
+            .image:hover .bike{
+                width: 20.5cm;
+            }
+            .menu{
+                background-color: rgb(255, 119, 0);
+                position: absolute;
+                height: 100%;
+                left: 45cm;
+                float: right;
+                padding-right: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navigation1";>
+            <p class="card one"><a class="link" href="#">KTM</a></p>
+            <p class="card two"><a class="link" href="#">Sports bike</a></p>
+            <p class="card three"><a class="link" href="#">Rc8</a></p>
+            <p class="card zoom five"><a class="link" href="#">search</a></p>
+            <p class="card zoom six"><a class="link" href="#">Company</a></p>
+            <p class="card zoom seven"><a class="link" href="#">career</a></p>
+            <p class="card zoom twelve"><a class="link" href="#">Menu</a></p>
+            <!-- <div class="menu">
+                <ul>
+                    <li><a href="#">KTM India</a></li>
+                    <li><a href="#">KTM Instagram</a></li>
+                    <li><a href="#">KTM Youtube</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <!-- <div class="card four">
+            <h2 class="high">Highlights</h2>
+        </div> -->
+        <div class="rc8">
+            <h1 class="heading"><i>KTM Rc8 2023</i></h1>
+        </div>
+        
+        <div class="image">
+            <img class="bike" src="https://purepng.com/public/uploads/large/purepng.com-ktm-1190-rc8motorcyclemotorbikebikevehiclektm-981525162005polxy.png" alt="bike">
+            <p class="card specs eight">Aerodynamic design,<br>16.5lr tank</p>
+            <p class="card specs nine">1195cc Engine</p>
+            <p class="card specs ten">10250rpm,<br>173Bhp<br></p>
+            <p class="card specs eleven">Different Riding modes,<br>top speed 287kmph</p>
+        </div>
+    </body>
+</html>

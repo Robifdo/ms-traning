@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="C:\Users\Administrator.MS-00601\Desktop\Robin\tasks\sports registratio nform\details.js"></script>
+        <meta name="viewport" content="width=device-width; scale=1.0">
+        <link rel="stylesheet" href="C:\Users\Administrator.MS-00601\Desktop\Robin\tasks\sports registratio nform\sports.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Edu+SA+Beginner:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+    </head>
+    <body style="font-family: 'Edu SA Beginner', cursive;">
+        <div class="ms"><h1>Welcome to M&S sports club</h1></div>
+        <div class="details">
+            <div class="heading">Sports Registration form</div>
+            <div class="block">
+                <label for="" class="property" >Name</label>
+                <input class="value box" id="name" type="text">
+            </div>
+            <div class="block">
+                <label for="" class="property">Email-id</label>
+                <input class="value box" id="email" type="text">
+            </div>
+            <div class="block">
+                <label for="" class="property">Phone number</label>
+                <input class="value box" id="phoneno" type="number">
+            </div>
+            <div class="block">
+                <label for="" class="property">Gender</label>
+                <select class="value box" name="" id="gender">
+                    <optgroup label="choose your gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="th">third gender</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div class="block">
+                <label for="" class="property">DOB</label>
+                <input class="value box" type="date" id="dob">
+            </div>
+            <div>
+                <h1 class="add">
+                    Address
+                </h1>
+            </div>
+            <div class="block">
+                <label class="property" for="">Door no</label>
+                <input class="value box" type="text" id="door">
+            </div>
+            <div class="block">
+                <label class="property" for="">city</label>
+                <input class="value box" type="text" id="city">
+            </div>
+            <div class="block">
+                <label class="property" for="">state</label>
+                <input class="value box" type="text" id="state">
+            </div>
+            
+            <div class="block">
+                <label class="property" for="">country</label>
+                <select class="value box" name="coutry" id="country">
+                    <optgroup label="Choose your country">
+                        <option value="india">india</option>
+                        <option value="">Outside india</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="block">
+                <label class="property" for="">postal code</label>
+                <input class="value box" type="number" id="pincode">
+            </div>
+            <div class="block">
+                <h1 class="add">Sports type</h1>
+                <label class="property" for="">Choose your sport</label>
+                <select class="value box" name="" id="sport">
+                    <optgroup label="Shoose your sport">
+                        <option value="">Cricket</option>
+                        <option value="">Football</option>
+                        <option value="">Chess</option>
+                        <option value="">Badmiton</option>
+                        <option value="">Hockey</option>
+                        <option value="">Athletics</option>
+                        <option value="">Basketball</option>
+                        <option value="">Tennis</option>
+                        <option value="">weight lifting</option>
+                        <option value="">Boxing</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <div class="add">
+                <button style="width: 3cm; height: 1cm; border-radius: 10px; box-shadow: 5px 5px 10px; " type="submit" onclick="det()">Submit</button>
+
+                </div>
+            </div>
+            <br>
+            
+            <br>
+            <!-- <br> -->
+            <p id="display" style="font-family: 'Courier New', Courier, monospace; font-size: 20px;"></p>
+        </div>
+    </body>
+</html>

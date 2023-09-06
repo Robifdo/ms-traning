@@ -1,0 +1,67 @@
+body{
+    background-image: url(https://compote.slate.com/images/6efbcf7a-1ad4-4324-a0eb-19a731408a67.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+.details{
+    font-size: 40px;
+    margin: 0;
+    margin-top: 3cm;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 40px;
+    background-color: rgb(0, 255, 255);
+    height: auto;
+    opacity: .7;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px;
+}
+
+.heading{
+    padding-bottom: 2cm;
+    font-size: 50px;
+    margin: 0px auto auto;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(255, 6, 105);
+    /* border-bottom: 3px solid rgb(255, 6, 105); */
+}
+.ms{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1cm;
+    padding-top: 40px;
+    font-family: 'Alata', sans-serif;
+}
+.block{
+    display: block;
+    
+}
+.property{
+    /* border: 2px solid black; */
+    display: inline-block;
+    width: 50%;
+    left: 0;
+    text-align: center;
+}
+.value{
+    /* width: 50%; */
+    position: relative;
+    
+}
+.add{
+    font-size: 50px;
+    text-align: center;
+}
+.submit{
+    width: 6cm;
+}
+.box{
+    width: 5cm;
+    height: 30px;
+    border-radius: 10px;
+}

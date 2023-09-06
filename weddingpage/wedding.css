@@ -1,0 +1,139 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Pinyon Script', cursive;
+}
+.screen{
+    position: absolute;
+    width: 100%;
+    height: 74cm;
+    top: 0;
+    border: 3px solid black;
+    z-index: 2;
+}
+
+
+.bg{
+    position: absolute;
+    width: 100%;
+    filter: blur(200px);
+    z-index: -1;
+    background-repeat: repeat;
+  /* -webkit-filter: blur(8px); */
+}
+.bgi{
+    margin-top: 35cm;
+}
+.header{
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    /* background-origin: 2px solid black; */
+    padding-top: 2cm;
+}
+.names{
+    border: 2px solid black;
+    width: 50%;
+    font-size: 30px;
+}
+.font{
+    font-family: 'Dancing Script', cursive;
+    z-index: 2;
+    font-size: 60px;
+}
+.flower{
+    position: absolute;
+    width: 40%;
+    top: 5cm;
+    left: 3cm;z-index: -1;
+    opacity: .70;
+}
+.boy{
+    margin-top: 5cm;
+    margin-left: 9cm;
+}
+.weds{
+    
+    margin-left: 11cm;
+}
+.girl{
+    
+    margin-left: 14cm;
+}
+.story{
+    top: 7cm;
+    position: absolute;
+    float: right;
+    width: 49%;
+    left: 50%;
+}
+.box{
+    margin:0px auto auto;
+    width: 70%;
+    height: 15cm;
+    left: 3cm;
+    background-color: bisque;
+    border-radius: 80px;
+    box-shadow: 10px 10px 40px;
+}
+.para{
+    font-family: 'Satisfy', cursive; 
+    font-size: 50px;
+    text-align: justify;
+    padding: 70px;
+}
+.card{
+    background-color: bisque;
+    padding-top: .4cm;
+    padding: 10px;
+    height: 6cm;
+    width: 8cm;
+    margin: 0px auto ;
+    margin-top: 4cm;
+    border-radius: 80px;
+    font-family: 'Satisfy', cursive;
+    
+    text-align: center;
+    transition: .3s;
+}
+.p{
+    font-size: 40px;
+    transition: .3s;
+}
+.cards{
+    margin-top: 12cm;
+}
+.card:hover{
+    box-shadow: 10px 10px 30px;
+    
+}
+.card:hover .p{
+    font-size: 45px;
+    padding-top: -10px;
+}
+.gif{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10cm;
+}
+.gif img{
+    width: 350px;
+    margin-left:41% ;
+}
+.heart{
+    position: absolute;
+    top: 45cm;
+    left: 7cm;
+    transform: rotate(340deg);
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart{
+    0%{width: 7cm;}
+    50%{width: 6cm;}
+    100%{width: 7cm;}
+}
+
+ 

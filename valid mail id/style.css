@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url(https://wsa.ch/en/wp-content/uploads/sites/4/2020/09/MS-SCHLIEREN.jpeg); */
+    /* filter: blur(1px); */
+    background-size: cover;
+    margin: 0;
+    /* background-image: linear-gradient(to bottom,rgb(237, 134, 175),#388ef1); */
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Lunasima', sans-serif;
+    font-size: 13px;
+    color: white;
+    z-index: -1;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid black; */
+    
+}
+.bg img{
+    width: 100%;
+    margin: 0;
+    filter: blur(3px);
+}
+.container{
+    margin: 0;
+    width:10cm;
+    color: #263443;
+    height: 11cm;
+    position: relative;
+    border: 1px solid rgb(120, 118, 118);
+    border-radius: 20px;
+    top: 7.5cm;
+    margin-left: 6cm;
+    padding: 10px;
+    box-shadow: 1px 0px 30px black;
+    background-color: rgba(255, 255, 255, 0.313);
+    transition: .3s;
+    animation-name: container;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    background-color: rgba(255, 255, 255, 0.242);
+}
+
+
+.container:hover{
+    /* size: 13cm 14cm; */
+    /* size-adjust: 90%; */
+    top: 7cm;
+    margin-left: 5.8cm;
+    width: 11.5cm;
+    height: 12cm;
+    content-visibility: 12px;
+    font-size: 14px;
+    padding: 25px;
+    color: #191a1a;
+    background-color: rgba(255, 255, 255, 0.34);
+}
+.container:hover .text{
+    width: 5.5cm;
+}
+.email,.button{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    padding-top: 15px;
+    /* border: 2px solid black; */
+}
+.button{
+    margin-top: 1cm;
+}
+.email{
+    margin-top: 2cm;
+}
+.label{
+    width: 40%;
+    /* margin-left: 10px; */
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+.text{
+    color: #263443;
+    position: absolute;
+    width: 5cm;
+    margin-left: 5%;
+    height: .7cm;
+    background-color: transparent;
+    border: 1px solid rgb(120, 118, 118);
+    border-radius: 5px;
+    /* color: rgb(3, 11, 18); */
+    text-align: center;
+    transition: .3s;
+}
+.em:focus{
+    background-color: #263443;
+    color: white;
+}
+.pw:focus{
+    background-color: #2d4560;
+    color: white;
+}
+.submit{
+    /* border: 2px solid black; */
+    display: block;
+    margin-top: 2cm;
+    
+}
+.submit_button{
+    z-index: 1;
+    color: rgb(44, 44, 44);
+    display: block;
+    margin: 0px auto auto;
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid rgb(120, 118, 118);
+    border-radius: 4px ;
+}
+.submit_button:hover{
+    background-color: #2d4560;
+    color: white;
+}
+.para{
+    display: block;
+    /* border: 1px solid black; */
+    margin-top:1.4cm ;
+    text-align: center;
+}
+.bor{
+    border-color: rgba(84, 84, 84, 0.486);
+}
+
+
