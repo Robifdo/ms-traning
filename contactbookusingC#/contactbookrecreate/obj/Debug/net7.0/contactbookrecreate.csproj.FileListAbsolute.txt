@@ -1,0 +1,15 @@
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.csproj.AssemblyReference.cache
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.AssemblyInfoInputs.cache
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.AssemblyInfo.cs
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\bin\Debug\net7.0\contactbookrecreate.exe
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\bin\Debug\net7.0\contactbookrecreate.deps.json
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\bin\Debug\net7.0\contactbookrecreate.runtimeconfig.json
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\bin\Debug\net7.0\contactbookrecreate.dll
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\bin\Debug\net7.0\contactbookrecreate.pdb
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.dll
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\refint\contactbookrecreate.dll
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.pdb
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\contactbookrecreate.genruntimeconfig.cache
+C:\Users\Administrator.MS-00601\Desktop\Robin\cs\contactbookusingC#\contactbookrecreate\obj\Debug\net7.0\ref\contactbookrecreate.dll

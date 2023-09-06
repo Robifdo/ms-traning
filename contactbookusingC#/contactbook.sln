@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contactbookrecreate", "contactbookrecreate\contactbookrecreate.csproj", "{E86EB01A-90CD-4697-911C-2CF7FB31A175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contactbookusing c#", "contactbookusing c#\contactbookusing c#.csproj", "{82D7AAFB-32F5-409F-9C9A-34A68A7F77B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E86EB01A-90CD-4697-911C-2CF7FB31A175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86EB01A-90CD-4697-911C-2CF7FB31A175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86EB01A-90CD-4697-911C-2CF7FB31A175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86EB01A-90CD-4697-911C-2CF7FB31A175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D7AAFB-32F5-409F-9C9A-34A68A7F77B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D7AAFB-32F5-409F-9C9A-34A68A7F77B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D7AAFB-32F5-409F-9C9A-34A68A7F77B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D7AAFB-32F5-409F-9C9A-34A68A7F77B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB0CF1D6-F2C6-4EE1-981F-F8BDD2498F00}
+	EndGlobalSection
+EndGlobal
